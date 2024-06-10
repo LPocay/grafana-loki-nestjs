@@ -1,11 +1,8 @@
-version: "3"
-
 networks:
   loki:
 
 services:
   nestjs-app:
-    image: nestjs-app-image
     build:
       context: .
       dockerfile: Dockerfile

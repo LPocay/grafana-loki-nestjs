@@ -39,7 +39,7 @@ This project implements a sidecar for log collection and monitoring using Grafan
 
 ## Endpoints
 
-The NestJS application includes two main endpoints for demonstration purposes:
+The NestJS application ([http://localhost:3001](http://localhost:3001)) includes two main endpoints for demonstration purposes:
 
 1. **GET /**: Returns a greeting message and log an info message.
 2. **GET /fail**: Generates an intentional error to test log capturing.
