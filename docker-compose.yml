@@ -13,6 +13,8 @@ services:
       - ./logs:/app/logs
     ports:
       - "3001:3000"
+    environment:
+      - LOG_LEVEL=${LOG_LEVEL}
   loki:
     image: grafana/loki:2.9.2
     ports:

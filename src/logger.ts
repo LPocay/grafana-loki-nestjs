@@ -8,7 +8,7 @@ const consoleFormat = printf(({ level, message, metadata }) => {
 });
 
 const logger = createLogger({
-  level: 'debug',
+  level: process.env.LOG_LEVEL || 'debug',
   format: combine(
     errors({ stack: true }),
     metadata(),
